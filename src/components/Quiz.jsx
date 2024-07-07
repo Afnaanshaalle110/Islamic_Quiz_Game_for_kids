@@ -1,9 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import { Questions } from '../Pages/QuestionH';
+import { QuizContext } from '../Pages/Contexts';
 
 const Quiz = () =>{
+    const [score, setscore] = useContext(QuizContext); 
     const [CurrQuestion, setCurrQuestion] = useState(0); 
     const [optionchosen, setoptionchosen] = useState("");
+          // #netQuestion function
+    const next = () => {
+        if (Questions[CurrQuestion].Answer == optionchosen){
+            setscore()
+        }
+    };
     return (
         <div className='Quiz'>
             <h1>{Questions[CurrQuestion] .prompt}</h1>

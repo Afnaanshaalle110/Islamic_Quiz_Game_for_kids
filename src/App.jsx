@@ -10,11 +10,13 @@ import {QuizContext} from './Pages/Contexts'
 
 const App = () => {
     const [game, setgame] = useState("menue");
+    const [score, setscore] = useState(0);
+
     return (
       <div className='game' >
           <h1>Islamic Quiz Game</h1>
            {/* conditional rendering  */}
-          <QuizContext.Provider value={{game, setgame}}>
+          <QuizContext.Provider value={{game, setgame, score, setscore}}>
           {game == "menue" && <MainMenue/>}
           {game == "quiz" && <Quiz/>}
           {game == "endquiz" && <EndQuiz/>}
