@@ -3,7 +3,7 @@ import { Questions } from '../Pages/QuestionH';
 
 const Quiz = () =>{
     const [CurrQuestion, setCurrQuestion] = useState(0); 
-    const [optionchosen, setoptionchosen] = useState();
+    const [optionchosen, setoptionchosen] = useState("");
     return (
         <div className='Quiz'>
             <h1>{Questions[CurrQuestion] .prompt}</h1>
