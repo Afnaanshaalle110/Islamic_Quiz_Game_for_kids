@@ -9,10 +9,10 @@ const Quiz = () =>{
             <h1>{Questions[CurrQuestion] .prompt}</h1>
 
             <div className='opitions'>
-                <button> {Questions[CurrQuestion] .opA}</button>
-                <button> {Questions[CurrQuestion] .opB}</button>
-                <button> {Questions[CurrQuestion] .opC}</button>
-                <button> {Questions[CurrQuestion] .opD}</button>
+                <button onClick={() => setoptionchosen("A")}> {Questions[CurrQuestion] .opA}</button>
+                <button onClick={() => setoptionchosen("B")}> {Questions[CurrQuestion] .opB}</button>
+                <button onClick={() => setoptionchosen("C")}> {Questions[CurrQuestion] .opC}</button>
+                <button onClick={() => setoptionchosen("D")}> {Questions[CurrQuestion] .opD}</button>
             
             </div>
             <button>Next</button>
