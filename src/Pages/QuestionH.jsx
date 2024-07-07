@@ -71,5 +71,37 @@ export const Questions = [
     },
 
     
+    { 
+        prompt: "Maghrib prayer: how many rak'ahs?",
+        opA: "1 ",
+        opB: "None",
+        opC: "3",
+        opD: "7",
+        Answer: "opB",
+     
+    },
+
+    { 
+        prompt: "The companion who was called the Secretary of the Imams....",
+        opA: "Abu Bakr",
+        opB: "Bilal bin Rabah",
+        opC: "Abu Ubaidah bin Al-Jarrah",
+        opD: "7Othman bin Affan ",
+        Answer: "opC",
+     
+    },
+
+    { 
+        prompt: "The companion who was called the Secretary of the Imams....",
+        opA: "Abu Bakr, may Allah be pleased with him",
+        opB: "Bilal bin Rabah may God be pleased with him",
+        opC: "Abu Ubaidah bin Al-Jarrah, may God be pleased with him",
+        opD: "Othman bin Affan may Allah be pleased with him ",
+        Answer: "opC",
+     
+    },
+    
+
+    
 ];
 
