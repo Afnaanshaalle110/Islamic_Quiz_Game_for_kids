@@ -1,4 +1,4 @@
-export const Questions = [
+export const QuestionH = [
     { 
         prompt: "Who is the Seal of the Prophets?",
         opA: "Ibrahim,",

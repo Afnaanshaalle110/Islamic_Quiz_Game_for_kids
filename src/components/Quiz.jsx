@@ -1,35 +1,76 @@
-import React, {useState, useContext} from 'react'
-import { QuizContext } from '../Pages/Contexts'
-import { Questions } from '../Pages/QuestionH'
+import { useState } from "react";
+import { useContext } from "react";
+import { GameContext } from "../Pages/Contexts";
 
 const Quiz = () => {
-    //   function update
-    const [score, setscore] = useContext(QuizContext);
-    const [CurrQuestion, setCurrQuestion] = useState(0);
-    const [optionchosen, setoptionchosen] = useState("")
-          // #netQuestion function
-    const next = () => {
-        if (Questions[CurrQuestion].Answer == optionchosen){
-            setscore(score + 1);
-        }
-        alert(score);
-        setCurrQuestion(CurrQuestion + 1);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [optionChosen, setOptionChosen] = useState("");
+
+  const { score, setScore, Game, setGame } = useContext(GameContext);
+
+  const chooseOption = (option) => {
+    setOptionChosen(option);
+  };
+
+  const NextQuestion = () => {
+    if (QuestionH[currentQuestion].Answer == optionChosen) {
+      setScore(score + 1);
     }
-    return (
-        <div className='Quiz'>
-            <h1>{Questions[CurrQuestion] .prompt}</h1>
-            <div className='opitions'>
-                <button onClick={() => setoptionchosen("A")} > 
-                    {Questions[CurrQuestion].opA}{""}</button>
-                <button onClick={() => setoptionchosen("B")} > 
-                    {Questions[CurrQuestion].opB}{""}</button>
-                <button onClick={() => setoptionchosen("C")} >
-                     {Questions[CurrQuestion].opC}{""}</button>
-                <button onClick={() => setoptionchosen("D")} > 
-                    {Questions[CurrQuestion].opD}{""}</button>
-            </div>
-            <button onClick={next}>Next</button>
-        </div>
-    );
+    setCurrentQuestion(currentQuestion + 1);
+  };
+
+  const finish = () => {
+    if (QuestionH[currentQuestion].Answer == optionChosen) {
+      setScore(score + 1);
+    }
+    setGame("finished");
+  };
+
+  return (
+    <div className="Quiz">
+      <h1>{QuestionH[currentQuestion].prompt}</h1>
+      <div className="questions">
+        <button
+          onClick={() => {
+            chooseOption("optionA");
+          }}
+        >
+          {QuestionH[currentQuestion].optionA}
+        </button>
+        <button
+          onClick={() => {
+            chooseOption("optionB");
+          }}
+        >
+          {QuestionH[currentQuestion].optionB}
+        </button>
+        <button
+          onClick={() => {
+            chooseOption("optionC");
+          }}
+        >
+          {QuestionH[currentQuestion].optionC}
+        </button>
+        <button
+          onClick={() => {
+            chooseOption("optionD");
+          }}
+        >
+          {QuestionH[currentQuestion].optionD}
+        </button>
+      </div>
+
+      {currentQuestion == QuestionH.length - 1 ? (
+        <button onClick={finish} id="Next">
+          Finish Quiz
+        </button>
+      ) : (
+        <button onClick={NextQuestion} id="Next">
+          Nex
+        </button>
+      )}
+    </div>
+  );
 }
-export default Quiz
+
+export default Quiz;
