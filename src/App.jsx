@@ -21,12 +21,8 @@ const App = () => {
           {game == "quiz" && <Quiz/>}
           {game == "endquiz" && <EndQuiz/>}
           </QuizContext.Provider>
-        
-          
-          
-         
       </div>
-    );
+    )
   }
   
-  export default App;
+  export default App

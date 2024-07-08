@@ -5,7 +5,7 @@ export const Questions = [
         opB: "Ayub",
         opC: "Isse",
         opD: "Muhammad, may God bless him and grant him peace",
-        Answer: "opD",
+        Answer: "D",
      
     },
 
@@ -16,7 +16,7 @@ export const Questions = [
         opB: "Asr prayer",
         opC: "Salat Aduher",
         opD: "None",
-        Answer: "opB",
+        Answer: "B",
      
     },
 
@@ -27,7 +27,7 @@ export const Questions = [
         opB: "Adam",
         opC: "Musse cs",
         opD: "Isse",
-        Answer: "opC",
+        Answer: "C",
      
     },
 
@@ -37,7 +37,7 @@ export const Questions = [
         opB: "4",
         opC: "3",
         opD: "5",
-        Answer: "opD",
+        Answer: "D",
      
     },
     { 
@@ -46,7 +46,7 @@ export const Questions = [
         opB: "Friday",
         opC: "Tuesday",
         opD: "Wednesday",
-        Answer: "opB",
+        Answer: "B",
      
     },
 
@@ -56,7 +56,7 @@ export const Questions = [
         opB: "612",
         opC: "3",
         opD: "1",
-        Answer: "opA",
+        Answer: "A",
      
     },
 
@@ -93,7 +93,7 @@ export const Questions = [
 
     { 
         prompt: "The companion who was called the Secretary of the Imams....",
-        opA: "Abu Bakr, may Allah be pleased with him",
+        opA: "Abu Bakar, may Allah be pleased with him",
         opB: "Bilal bin Rabah may God be pleased with him",
         opC: "Abu Ubaidah bin Al-Jarrah, may God be pleased with him",
         opD: "Othman bin Affan may Allah be pleased with him ",
