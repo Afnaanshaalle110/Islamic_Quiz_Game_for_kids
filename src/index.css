@@ -1,4 +1,4 @@
-.game {
+.App {
   text-align: center;
   font-family: arial;
   display: flex;
@@ -11,7 +11,7 @@
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: rgb(120, 152, 242);
+  background-color: lightseagreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,29 +35,29 @@ button:hover {
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: rgb(42, 128, 226);
+  background-color: lightseagreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Menu, .Quiz, .EndQuiz h1 {
+.Menu, .Quiz, .EndScreen h1 {
   color: white;
 }
 
-.EndQuiz {
+.EndScreen {
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: rgb(47, 114, 249);
+  background-color: lightseagreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#Next {
+#nextQuestion {
   width: 200px;
 }
 
