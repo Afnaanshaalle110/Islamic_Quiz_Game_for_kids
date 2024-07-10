@@ -4,7 +4,7 @@ export const Questions = [
         opA: "Ibrahim,",
         opB: "Ayub",
         opC: "Isse", 
-        opD: "Muhammad, may God bless him and grant him peace",
+        opD: "Muhammad SCW",
         Answer: "D",
      
     },
@@ -23,7 +23,7 @@ export const Questions = [
 
     { 
         prompt: "Who is the prophet who was called the Word of God?",
-        opA: "Prophet Muhammad, peace be upon him",
+        opA: "Prophet Muhammad",
         opB: "Adam",
         opC: "Musse cs",
         opD: "Isse",
@@ -66,7 +66,7 @@ export const Questions = [
         opB: "Surat Al-Asr",
         opC: "Surah Al-Fatihah ",
         opD: "None",
-        Answer: "opC",
+        Answer: "C",
      
     },
     { 
@@ -75,7 +75,7 @@ export const Questions = [
         opB: "None",
         opC: "3",
         opD: "7",
-        Answer: "opB",
+        Answer: "B",
      
     },
 
@@ -83,19 +83,19 @@ export const Questions = [
         prompt: "The companion who was called the Secretary of the Imams....",
         opA: "Abu Bakr",
         opB: "Bilal bin Rabah",
-        opC: "Abu Ubaidah bin Al-Jarrah",
-        opD: "7Othman bin Affan ",
-        Answer: "opC",
+        opC: "Abu Ubaidah ",
+        opD: "Othman bin Affan ",
+        Answer: "C",
      
     },
 
     { 
         prompt: "The companion who was called the Secretary of the Imams....",
-        opA: "Abu Bakar, may Allah be pleased with him",
-        opB: "Bilal bin Rabah may God be pleased with him",
-        opC: "Abu Ubaidah bin Al-Jarrah, may God be pleased with him",
-        opD: "Othman bin Affan may Allah be pleased with him ",
-        Answer: "opC",
+        opA: "Abu Bakar",
+        opB: "Bilal bin Rabah",
+        opC: "Abu Ubaidah bin Al-Jarrah,",
+        opD: "Othman bin Affan ",
+        Answer: "C",
      
     },  
 ];

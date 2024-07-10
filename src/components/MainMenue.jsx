@@ -8,10 +8,8 @@ function MainMenue() {
         <div className='Menue'>
             <button onClick={() => {setgameState("quiz");
 
-            }}>
-                Start Quiz</button>
+            }}> Start Quiz</button>
         </div>
     )
 }
-
 export default MainMenue

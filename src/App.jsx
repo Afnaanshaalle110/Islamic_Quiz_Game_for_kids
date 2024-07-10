@@ -1,9 +1,11 @@
 import React, { useState, useContext } from 'react'
-import './index.css'
-import MainMenue from './components/MainMenue';
-import Quiz from './components/Quiz';
-import EndQuiz from './components/EndQuiz';
-import { quizcontext } from './Pages/Contexts';
+import "./index.css";
+import MainMenue from "./components/MainMenue";
+import Quiz from "./components/Quiz";
+import EndQuiz from "./components/EndQuiz";
+import { quizcontext } from "./Pages/Contexts";
+
+
 const App = () => {
     // function update
   const [gameState, setgameState] = useState("menue");
