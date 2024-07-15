@@ -5,7 +5,7 @@ import { Questions } from '../Pages/Questions'
 import { renderToStaticMarkup } from 'react-dom/server'
 
 const EndQuiz = () => {
-    const {Score, setScore,setgameState } = useContext(quizcontext);
+    const {Score, setScore,setgameState ,userName } = useContext(quizcontext);
     const restartquiz = () =>{
         setScore(0);
         setgameState("menue");
