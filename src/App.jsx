@@ -1,27 +1,34 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react';
 import "./index.css";
 import MainMenue from "./components/MainMenue";
 import Quiz from "./components/Quiz";
 import EndQuiz from "./components/EndQuiz";
-import { quizcontext } from "./Pages/Contexts";
-
+import { quizcontext, QuizProvider } from "./Pages/Contexts";
 
 const App = () => {
-    // function update
-  const [gameState, setgameState] = useState("menue");
-  const [Score, setScore] = useState(0);
-
   return (
     <div className='game'>
-        <h1>Islamic Quiz Game</h1>
-        {/* conditional rendering */}
-        <quizcontext.Provider value={{gameState, setgameState, Score, setScore}}>
-        {gameState == "menue" && <MainMenue/>}
-        {gameState == "quiz" && <Quiz/>}
-        {gameState == "endquiz" && <EndQuiz/>}
-        </quizcontext.Provider>
+      <img src="myphoto.jfif" alt="" />
+      <h1>Islamic Quiz Game</h1>
+      {/* Provide the quiz context to the rest of the app */}
+      <QuizProvider>
+        <QuizContextConsumer />
+      </QuizProvider>
     </div>
   );
-}
+};
 
-export default App
+// Component to consume the context and conditionally render components based on game state
+const QuizContextConsumer = () => {
+  const { gameState } = useContext(quizcontext);
+
+  return (
+    <>
+      {gameState === "menue" && <MainMenue />}
+      {gameState === "quiz" && <Quiz />}
+      {gameState === "endquiz" && <EndQuiz />}
+    </>
+  );
+};
+
+export default App;

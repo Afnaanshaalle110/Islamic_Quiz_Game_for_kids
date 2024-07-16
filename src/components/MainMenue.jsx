@@ -1,44 +1,31 @@
-import React, { useContext, useState } from 'react'
-import { quizcontext } from '../Pages/Contexts'
-import '../index.css'
-import Quiz from './Quiz';
+import React, { useContext, useState } from 'react';
+import { quizcontext } from '../Pages/Contexts';
+import '../index.css';
 
 function MainMenue() {
-    const {gameState, setgameState} = useContext(quizcontext); 
-    // const [userName, setUserNamer] = useState("");
-    
-    
-//    const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setSubmitted(true);
-//   };
+  // Access the context
+  const { setgameState, setUsername } = useContext(quizcontext); 
+  // State to manage the input username
+  const [inputUsername, setInputUsername] = useState("");
 
-    return (
-        <div className='Menue'>
-              {/* {Submitted ? (
-            <h1>Welcome, {userName}!</h1>
-          ) : (
-            <form onSubmit={handleSubmit}>
-              <label>
-                Username:
-                <br />
-                <input
-                  type="text"
-                  value={userName}
-                  onChange={(e) => setUserNamer(e.target.value)}
-                  required
-                />
-              </label>
-              <button type="submit" >Submit</button>
-            </form>
-          )}
-                */}
-         <button onClick={() => {setgameState("quiz");
+  // Handle the start quiz button click
+  const handleStartQuiz = () => {
+    if (inputUsername.trim() !== "") {
+      // Set the username in the context and start the quiz
+      setUsername(inputUsername);
+      setgameState("quiz");
+    } else {
+      alert("Please enter a username");
+    }
+  };
 
-            }}> Start Quiz</button> 
-           
-        </div>
-    )
+  return (
+    <div className='Menue'>
+      <label>Username:</label>
+      <input type="text" value={inputUsername} onChange={(e) => setInputUsername(e.target.value)} />
+      <button onClick={handleStartQuiz}>Start Quiz</button>
+    </div>
+  );
 }
-    
-export default MainMenue
+
+export default MainMenue;
