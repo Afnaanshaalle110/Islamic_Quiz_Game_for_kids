@@ -24,7 +24,8 @@ The Islamic Quiz Game is a simple React application that tests your knowledge ab
 - Interactive quiz interface
 - Score tracking
 - User-friendly UI
-- Responsive design
+-  **Validation**: Users must select an answer before proceeding to the next question or finishing the quiz. The error message is displayed with a red background to attract attention.
+
 
 ## Installation
 
