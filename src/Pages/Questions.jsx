@@ -72,12 +72,12 @@ export const Questions = [
       Answer: "C",
     },
     { 
-      prompt: "The companion who was called the Secretary of the Imams....",
-      opA: "Abu Bakar",
-      opB: "Bilal bin Rabah",
-      opC: "Abu Ubaidah bin Al-Jarrah,",
-      opD: "Othman bin Affan ",
-      Answer: "C",
+      prompt: "how many juz(parts) are in the Qur'an?",
+      opA: "30",
+      opB: "60",
+      opC: "29",
+      opD: "none ",
+      Answer: "A",
     },  
   ];
   

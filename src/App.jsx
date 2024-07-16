@@ -8,7 +8,6 @@ import { quizcontext, QuizProvider } from "./Pages/Contexts";
 const App = () => {
   return (
     <div className='game'>
-      <img src="myphoto.jfif" alt="" />
       <h1>Islamic Quiz Game</h1>
       {/* Provide the quiz context to the rest of the app */}
       <QuizProvider>
