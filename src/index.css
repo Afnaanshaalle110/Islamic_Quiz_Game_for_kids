@@ -1,3 +1,14 @@
+/* Add this style for error message */
+.error {
+  background-color: red;
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Existing styles */
 .game {
   display: flex;
   font-family: 'Times New Roman', Times, serif;
@@ -6,7 +17,7 @@
   flex-direction: column;
 }
 
-.Menue , .quiz , .EndQuiz {
+.Menue, .quiz, .EndQuiz {
   width: 910px;
   height: 600px;
   border-radius: 11px;
@@ -17,7 +28,7 @@
   align-items: center;
 }
 
-.Menue button, .quiz button , .EndQuiz button {
+.Menue button, .quiz button, .EndQuiz button {
   width: 300px;
   height: 50px;
   margin: 9px;
@@ -27,7 +38,7 @@
   cursor: pointer;
 }
 
-.Menue, .quiz , .EndQuiz{
+.Menue, .quiz, .EndQuiz {
   color: whitesmoke;
 }
 
@@ -39,7 +50,7 @@
 }
 
 .selected {
-  background-color: rgb(52, 214, 239);
+  background-color: yellow;
 }
 
 label {
