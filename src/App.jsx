@@ -8,7 +8,7 @@ import { quizcontext, QuizProvider } from "./Pages/Contexts";
 const App = () => {
   return (
     <div className='game'>
-      <h1>Islamic Quiz Game</h1>
+      <h1>Islamic Quiz Game Fir Kids</h1>
       {/* Provide the quiz context to the rest of the app */}
       <QuizProvider>
         <QuizContextConsumer />
