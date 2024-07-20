@@ -21,7 +21,7 @@
   width: 910px;
   height: 600px;
   border-radius: 11px;
-  background-color: blueviolet;
+  background-color: hsl(271, 90%, 71%);
   display: flex;
   flex-direction: column;
   justify-content: center;
